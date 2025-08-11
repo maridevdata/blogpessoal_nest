@@ -12,7 +12,7 @@ export class DevService implements TypeOrmOptionsFactory {
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'n6mr4tcngw',
+      password: 'root',
       database: 'db_blogpessoal',
       entities: [Postagem, Tema, Usuario],
       synchronize: true,
