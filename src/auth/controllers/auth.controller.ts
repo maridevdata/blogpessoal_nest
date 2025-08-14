@@ -19,7 +19,7 @@ export class AuthController {
   @UseGuards(LocalAuthGuard)
   @HttpCode(HttpStatus.OK)
   @Post('/logar')
-  UsuarioLogin(@Body() usuario: UsuarioLogin): Promise<any> {
+  login(@Body() usuario: UsuarioLogin): Promise<any> {
     return this.authService.login(usuario);
   }
 }
